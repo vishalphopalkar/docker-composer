@@ -2,6 +2,14 @@ version: '3.3'
 services:
   mototale:
          image: vishalphopalkar/dockerpractice:v1
+
+ nginx:
+         image: nginx:latest
+
+         volumes:
+                ./conf.d:/etc/nginx/conf.d
+         depends_on: mototale
+
          ports:
-           - 8070-8079:80
+              9099:80
 
