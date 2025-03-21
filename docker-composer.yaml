@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  mototale:
+         image: vishalphopalkar/dockerpractice:v1
+         ports:
+           - 8070-8079:80
+
